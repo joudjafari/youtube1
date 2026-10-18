@@ -1,0 +1,69 @@
+
+package com.mycompany.joudp1;
+import java.util.Scanner;
+ 
+public class Homework1 {
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.print("Enter first number: ");
+        int n1=input.nextInt();
+        System.out.print("Enter second number: ");
+        int n2=input.nextInt();
+        if (n1 > n2) {
+            System.out.println("Maximum = " + n1);
+        } else {
+            System.out.println("Maximum = " + n2);
+        }
+        
+        
+        System.out.print("Enter n: ");
+        int n = input.nextInt();
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            System.out.print("Enter a number: ");
+            int num = input.nextInt();
+            sum += num;
+            boolean prime = true;
+            
+    if (n <= 1) {
+        prime = false;
+    } else {
+        for (int j = 2; j < num; j++) {
+            if (num % j == 0) {
+                prime = false;
+                break;
+            }
+        }
+    }
+
+    if (prime) {
+        System.out.println(num + " is a prime number");
+    } else {
+        System.out.println(num + " is not a prime number");
+    }
+}
+
+        
+        double average =sum / n;
+
+        System.out.println("Sum = " + sum);
+        System.out.println("Average = " + average);
+        
+        
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                System.out.println("even numbers= "+i);
+            }
+        }
+        
+        
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 != 0) {
+                System.out.println("odd numbers= "+i);
+            }
+             }
+        
+    }
+
+    }
+
