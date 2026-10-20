@@ -1,0 +1,17 @@
+
+package edu.zuj.vs;
+import javax.swing.JOptionPane;
+
+public class Exercise {
+    public static void main(String[] args) {
+    String n1=JOptionPane.showInputDialog("Enter first number:");
+    String n2=JOptionPane.showInputDialog("Enter second number:");
+        int in1 = Integer.parseInt(n1);
+        int in2 = Integer.parseInt(n2);
+
+        int sum = in1 + in2;
+        JOptionPane.showMessageDialog(null, "The sum is: " + sum);
+
+    System.exit(0);
+    }
+}
