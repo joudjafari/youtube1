@@ -1,0 +1,77 @@
+
+package edu.zuj.vs;
+
+
+import java.util.Scanner;
+
+public class Hw2 {
+    public static void main(String[] args) {
+
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        double num = s.nextDouble();
+
+        System.out.println("\nChoose from the menu:");
+        System.out.println("1.Inch to CM");
+        System.out.println("2.CM to Inch");
+        System.out.println("3.Feet to Meter");
+        System.out.println("4.Meter to Feet");
+        System.out.println("5.Dunum to Hectare");
+        System.out.println("6.Hectare to Dunum");
+        System.out.println("7.Fahrenheit to Celsius");
+        System.out.println("8.Celsius to Fahrenheit");
+
+        System.out.print("Enter your choice: ");
+        int choice = s.nextInt();
+
+        
+
+        switch (choice) {
+            case 1:
+                double result = num * 2.54;
+                System.out.println("Result = " + result + " CM");
+                break;
+
+            case 2:
+                result = num / 2.54;
+                System.out.println("Result = " + result + " Inch");
+                break;
+
+            case 3:
+                result = num * 0.3048;
+                System.out.println("Result = " + result + " Meter");
+                break;
+
+            case 4:
+                result = num / 0.3048;
+                System.out.println("Result = " + result + " Feet");
+                break;
+
+            case 5:
+                result = num / 10;
+                System.out.println("Result = " + result + " Hectare");
+                break;
+
+            case 6:
+                result = num * 10;
+                System.out.println("Result = " + result + " Dunum");
+                break;
+
+            case 7:
+                result = (num - 32) * 5 / 9;
+                System.out.println("Result = " + result + " Celsius");
+                break;
+
+            case 8:
+                result = (num * 9 / 5) + 32;
+                System.out.println("Result = " + result + " Fahrenheit");
+                break;
+
+            default:
+                System.out.println("Invalid choice!");
+        }
+
+        
+    }
+}
